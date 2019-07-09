@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Webpack Starter Kit</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <form class="search-form" id='search-form'>
+      <input type="text" autocomplete="off" placeholder="Search images..." name='query' />
+    </form>
+    <ul class="gallery" id="gallery">
+      <!-- Список <li> с карточками изображений <PhotoCard> -->
+    </ul>
+    <button id="search-query" class="load-more">Load more</button>
+    <div class="overlay">
+      <div class="modal">
+        <img>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+
+</body>
+
+</html>
