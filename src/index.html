@@ -18,10 +18,14 @@
     <ul class="gallery" id="gallery">
       <!-- Список <li> с карточками изображений <PhotoCard> -->
     </ul>
-    <button id="search-query" class="load-more">Load more</button>
+    <button id="search-query" class="load-more" disabled>Load more</button>
     <div class="overlay">
-      <div class="modal">
-        <img>
+      <div class="content">
+        <button type="button" class="content__button" data-action="close-modal">
+          <i class="material-icons">close</i>
+        </button>
+
+        <img />
       </div>
     </div>
   </div>

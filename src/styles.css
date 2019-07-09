@@ -17,7 +17,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -69,7 +69,8 @@ img {
 
 .photo-card img {
   height: 260px;
-  object-fit: cover;
+  cursor: pointer;
+  width: 100%
 }
 
 .stats {
@@ -149,4 +150,64 @@ img {
 .button:hover,
 .button:focus {
   background-color: #1f65d6;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  z-index: 999;
+  pointer-events: none;
+  transition: opacity 200ms ease-in-out;
+}
+
+.overlay img {
+  max-height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay.is-visible {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.overlay.is-visible .content {
+  transform: scale(1);
+}
+
+.overlay .content {
+  position: relative;
+  width: 1000px;
+  transform: scale(0.9);
+  transition: transform 200ms ease-in-out;
+
+}
+
+.content__button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -40px;
+  right: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content__button i {
+  font-size: 36px;
 }
