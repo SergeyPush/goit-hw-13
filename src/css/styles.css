@@ -28,6 +28,10 @@ img {
   grid-gap: 24px;
 }
 
+.container {
+  text-align: center;
+}
+
 /* Стили компонента SearchForm */
 .search-form {
   width: 100%;
@@ -70,7 +74,8 @@ img {
 .photo-card img {
   height: 260px;
   cursor: pointer;
-  width: 100%
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .stats {
@@ -185,7 +190,7 @@ img {
 
 .overlay .content {
   position: relative;
-  width: 1000px;
+  /* width: 1000px; */
   transform: scale(0.9);
   transition: transform 200ms ease-in-out;
 
@@ -210,4 +215,13 @@ img {
 
 .content__button i {
   font-size: 36px;
+}
+
+.page-load-status {
+  display: none;
+  /* hidden by default */
+  padding-top: 20px;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  color: #777;
 }

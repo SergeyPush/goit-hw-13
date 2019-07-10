@@ -1,7 +1,6 @@
 const baseUrl = 'https://pixabay.com/api/';
 const KEY = '12937632-34918ac446e6c937e0643541b';
 
-//pixabay.com/api/?key=12937632-34918ac446e6c937e0643541b&q=yellow+flowers&image_type=photo&pretty=true
 export default {
   page: 1,
   query: '',
